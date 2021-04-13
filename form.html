@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>TVCK </title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./Style.css" />
+    <link rel="stylesheet" href="./pages/Bground.css">
+</head>
+
+<body class="bground">
+    <class class="menu-container">
+
+        <ul class="menu clearfix">
+            <ul class="Sub-menu clearfix"></ul>
+            <li class="menu"><a href="./index.html">TVCK</a></li>
+            <li><a href="#">Gêneros</a>
+                <ul class="sub-menu">
+                    <li><a href="./pages/drama.html">Drama</a></li>
+                    <li><a href="./pages/suspense.html">Suspense</a></li>
+                    <li><a href="./pages/animação.html">Animação</a></li>
+                </ul>
+            </li>
+            <li><a href="./form.html">Nos ajude a melhorar</a></li>
+        </ul>
+        </li>
+    </class>
+
+    <main class="pedidos">
+        <form class="pedidos__formulario" method="get" accept-charset="utf-8">
+
+            <h5 class="formulario__titulo">Área destinada para pedidos e sugestões.</h5>
+
+            <p class="formulario__descricao">Preencha este formulário com seu nome, email e seu pedido ou sugestão.</p>
+
+            <label class="formulario__rotulo" for="nome">Digite seu nome completo:</label>
+            <input class="formulario__texto" type="text" id="nome" placeholder="Ex.: lucas Schopenhauer" />
+
+            <label class="formulario__rotulo" for="cidade">Digite o nome da sua cidade:</label>
+            <input class="formulario__texto" type="text" id="cidade" placeholder="Ex.: Luziânia" />
+
+            <label class="formulario__rotulo" for="estado">Digite o nome do seu estado:</label>
+            <input class="formulario__texto" type="text" id="estado" placeholder="Ex.: Goiás" />
+
+            <label class="formulario__rotulo" for="formulário__multipla-escolha">Tipo de mensagem:</label>
+            <div class="formulario__multipla-escolha">
+                <input type="checkbox" name="opcao" id="sugestao" />
+                <label class="formulario__rotulo" for="sugestao">Sugestão de série.</label>
+                <input type="checkbox" name="opcao" id="comentario" />
+                <label class="formulario__rotulo" for="comentario">Comentário sobre o site.</label>
+            </div>
+
+            <label class="formulario__rotulo" for="email">Digite seu e-mail:</label>
+            <input class="formulario__texto" type="email" id="email" placeholder="Ex.: nome@server.com" required/>
+
+            <label class="formulario__rotulo" for="pedido">Faça seu pedido:</label>
+            <textarea class="formulario__texto-pedido" id="pedido" placeholder="Ex.: Poderiam adicionar Back Street Girls ao catalogo?"></textarea>
+            <button class="formulario__botao" type="submit">Enviar</button>
+        </form>
+
+
+</body>
+
+</html>

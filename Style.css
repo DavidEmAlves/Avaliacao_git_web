@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+;
+;
+.menu,
+.sub-menu {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix:after {
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.menu,
+.sub-menu {
+    list-style: none;
+    background: rgb(53, 53, 53);
+}
+
+.sub-menu {
+    background: #444;
+}
+
+.menu a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu>li {
+    float: left;
+}
+
+.menu>li:hover {
+    background: #444;
+}
+
+.menu li:hover>.sub-menu {
+    display: block;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+}
+
+.sub-menu li:hover {
+    background: #555;
+}
+
+.sub-menu .sub-menu {
+    top: 0;
+    left: 100%;
+}
+
+.subCat {
+    padding: 2rem 2rem 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.cTitle {
+    font-family: 'Roboto', sans-serif;
+    color: #d8d8d8;
+    font-size: 1.5rem;
+    margin-bottom: .25rem;
+}
+
+.optionT {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: .5rem 0;
+}
+
+.optionin {
+    display: flex;
+    flex-direction: column;
+    width: calc(33.33% - 2rem);
+    height: 120px;
+    padding: .5rem;
+    margin-bottom: 1rem;
+}
+
+.boxhome {
+    align-self: start;
+    margin-top: 160px;
+    margin-left: 310px;
+    width: 550px;
+    border: 0.1rem solid rgba(41, 41, 41, 0.63);
+    border-radius: 2%;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: rgba(255, 255, 255, 0.815);
+}
+
+.description {
+    font-family: 'Open Sans', sans-serif;
+    color: #1d1d1d;
+    font-size: 1rem;
+    margin-bottom: .25rem;
+}
+
+.CButton {
+    background-color: #cccccc;
+    border-radius: 28px;
+    border: 1px solid #4a4a4a;
+    display: inline-block;
+    cursor: pointer;
+    color: #1d1d1d;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #999999;
+}
+
+.CButton:hover {
+    background-color: #949494;
+}
+
+.CButton:active {
+    position: relative;
+    top: 1px;
+}
+
+.bbox {
+    padding: 2rem 2rem 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.titlebbox {
+    color: #d1d1d1;
+    font-size: 1.3rem;
+    margin-bottom: .25rem;
+}
+
+.boxtitle {
+    display: flex;
+    flex-direction: column;
+    width: calc(33.33% - 2rem);
+    height: 270px;
+    padding: .5rem;
+    margin-bottom: 1rem;
+}
+
+.Cdescription {
+    padding-left: 1rem;
+    padding-top: .5rem;
+    color: #e0e0e0;
+}
+
+.pedidos__formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 2rem;
+}
+
+.formulario__titulo {
+    color: #e0e0e0;
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+}
+
+.formulario__descricao,
+.formulario__rotulo {
+    color: #e0e0e0;
+}
+
+.formulario__descricao,
+.formulario__multipla-escolha {
+    margin-bottom: .5rem;
+}
+
+.formulario__texto,
+.formulario__texto-pedido {
+    margin: .5rem;
+    border: none;
+}
+
+.formulario__texto {
+    width: 25%;
+}
+
+.formulario__texto-pedido {
+    width: 50%;
+    height: 100px
+}
+
+.formulario__botao {
+    background-color: #362932;
+    border: none;
+    width: 100px;
+    height: 50px;
+    color: #e0e0e0;
+}
+
+@media (max-width: 780px) {
+    .formulario__texto-pedido,
+    .formulario__texto {
+        width: calc(100% - .5rem);
+    }
+    .formulario__botao {
+        align-self: center;
+    }
+}
